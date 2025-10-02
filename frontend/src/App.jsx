@@ -1,4 +1,4 @@
-import Box from "./Box.jsx"
+import Box from "./templates/Box.jsx"
 
 function App() {
 
