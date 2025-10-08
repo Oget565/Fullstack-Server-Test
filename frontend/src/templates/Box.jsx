@@ -10,7 +10,7 @@ function Box() {
     return (
         <div class="box">
             <img src="public/firework.svg" alt="fireworks" />
-            <h1>The Site Is Working!</h1>
+            <h1>The Server Is Working!</h1>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <button onClick={handleClick}>Count: {count}</button>
             </div>

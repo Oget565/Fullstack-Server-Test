@@ -1,4 +1,5 @@
 import Box from "./templates/Box.jsx"
+import Backend_test from "./templates/Backend_test.jsx"
 
 function App() {
 
@@ -6,6 +7,7 @@ function App() {
     <>
 
       <Box></Box>
+      <Backend_test></Backend_test>
 
     </>
   );
