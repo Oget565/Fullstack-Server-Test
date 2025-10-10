@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 8085
 
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["python3" "app.py"]
