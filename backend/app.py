@@ -1,19 +1,15 @@
 from flask import Flask,  jsonify
-import python_weather
-import asyncio
+import pyjokes
 
 app = Flask(__name__)
 
-async def get_weather():
-    async with python_weather.Client() as client:
-        weather = await client.get('New York')
-        return weather.temperature
+def get_joke():
+    return pyjokes.get_joke()
 
-@app.route('/request_weather')
-def request_weather():
-    # Fetch weather data on each request
-    weather_temp = asyncio.run(get_weather())
-    return jsonify({'weather': weather_temp})
+@app.route('/request_joke')
+def request_joke():
+    joke = get_joke()
+    return jsonify({'joke': joke})
 
 if __name__ == '__main__':
     app.run(debug=False, port=8085)
