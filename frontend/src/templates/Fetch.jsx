@@ -1,7 +1,7 @@
 // Function to fetch joke from Flask backend
 export async function fetchJoke() {
     try {
-        const response = await fetch('http://localhost:8085/request_joke');
+        const response = await fetch('/api/request_joke');
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);

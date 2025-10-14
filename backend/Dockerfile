@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 8085
 
-CMD ["python3" "app.py"]
+CMD ["python3", "app.py"]
