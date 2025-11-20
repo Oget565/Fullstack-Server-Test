@@ -8,8 +8,8 @@ function Box() {
     };
 
     return (
-        <div class="box">
-            <img src="public/firework.svg" alt="fireworks" />
+        <div className="box">
+            <img src="/firework.svg" alt="fireworks" style={{ filter: 'invert(1)' }} />
             <h1>The Server Is Working!</h1>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <button onClick={handleClick}>Count: {count}</button>
