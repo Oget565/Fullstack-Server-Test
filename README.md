@@ -1,2 +1,28 @@
 # Fullstack-Server-Test
-This is a simple web appt hat has both frontend and backend and is running on nginx. The frontend is based on React and backend is written on python using Flask framewrok. You can use it to test the new server or your skill goals (ex: deploy it on a kubernetes cluster). PLease deploy by using the docker-compose.
+
+A full-stack web application built with React and Flask, containerized with Docker and orchestrated via Docker Compose.
+
+## Architecture
+
+- **Frontend**: React with Vite, served by Nginx on port 8083
+- **Backend**: Python Flask on port 8085
+- **Networking**: Services communicate via Docker bridge network
+- **Features**: JS count button, svg, joke served from backend
+
+## Quick Start
+
+Start the entire application:
+
+```bash
+docker compose up --build -d
+```
+
+Access the application:
+- Frontend: http://localhost:8083
+- Backend API: http://localhost:8085/request_joke
+
+To stop the services:
+
+```bash
+docker compose down
+```
